@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const { Post } = require("../models");
+const { Doctor } = require("../models");
 
 router.get("/", (req, res) => {
-  Post.findAll({
+  Doctor.findAll({
     attributes: ["id", "title", "description", "created_at"],
   })
     .then((dbPostData) => {

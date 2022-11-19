@@ -1,3 +1,3 @@
-const Post = require("./Post");
+const Doctor = require("./Doctor");
 
-module.exports = { Post };
+module.exports = { Doctor };
