@@ -1,3 +1,3 @@
 const Doctor = require("./Doctor");
-
-module.exports = { Doctor };
+const Hospital = require("./Hospital");
+module.exports = { Doctor, Hospital };

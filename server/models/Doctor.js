@@ -22,6 +22,10 @@ const doctorSchema = new Schema(
       type: Number,
       default: 0,
     },
+    hospitalID: {
+      type: Number,
+      required: true,
+    },
   },
   {
     toJSON: {
