@@ -2,11 +2,11 @@ const { Schema, model } = require("mongoose");
 
 const hospitalSchema = new Schema(
     {
-      hospitalName: {
-        type: String,
+      facility_id: {
+        type: Number,
         required: true,
       },
-      phoneNumber: {
+      facility_name: {
         type: String,
         required: true,
       },
@@ -14,8 +14,24 @@ const hospitalSchema = new Schema(
         type: String,
         required: true,
       },
-      ZIP: {
+      phone_number: {
         type: String,
+        required: true,
+      },
+      city: {
+        type: String,
+        required: true,
+      },
+      zip_code: {
+        type: Number,
+        required: true,
+      },
+      county_name: {
+        type: String,
+        required: true,
+      },
+      hospital_overall_rating: {
+        type: Number,
         required: true,
       },
     },
