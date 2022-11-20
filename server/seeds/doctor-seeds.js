@@ -7,7 +7,7 @@ const doctorData = [
     practitioner: "Dermatologist",
     price: 50.0,
     rating: 1.5,
-    hospitalID: 10005,
+    hospitalID: 10001,
   },
   {
     firstName: "Test1",
@@ -15,7 +15,7 @@ const doctorData = [
     practitioner: "Chiropractor",
     price: 60.0,
     rating: 2.5,
-    hospitalID: 10001,
+    hospitalID: 10023,
   },
 ];
 
