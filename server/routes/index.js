@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const doctorRoute = require("./doctor-route");
+const hospitalRoute = require("./hospitals-route");
 
-router.use("/doctor", doctorRoute);
+router.use("/hospital", hospitalRoute);
 
-router.use((req, res) => {
-  res.status(404).send("<h1>😝 404 Error!</h1>");
-});
+// router.use((req, res) => {
+//   res.status(404).send("<h1>😝 hello 404 Error!</h1>");
+// });
 
 module.exports = router;

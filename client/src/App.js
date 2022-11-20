@@ -1,10 +1,12 @@
-import Landing from './pages/Landing';
-import Nearest from './pages/Nearest';
-import Hospital from './pages/Hospital';
-import { Routes, Route } from 'react-router-dom';
-import './App.scss';
 
-export default function App() {
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Hospital from './pages/Hospital';
+import Nearest from './pages/Nearest';
+import Landing from './pages/Landing';
+
+
+function App() {
   return (
     <div className="App">
       <Routes>
@@ -15,3 +17,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

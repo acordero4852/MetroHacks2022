@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const { Doctor, Hospital } = require("../models");
+const { Hospital } = require("../models");
 
 router.get("/", (req, res) => {
   Hospital.find({})
-    .limit(1000)
+    .limit(100)
     .then((data) => res.json(data))
     .catch((err) => {
       console.log(err);
